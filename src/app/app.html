@@ -17,3 +17,47 @@
   \\mu\\nabla^2 u
   '"></app-katex-renderer>
 </div>
+<div class="welcome-container">
+  <h1>Derivations 
+    <a href="https://doi.org/10.1016/j.combustflame.2015.06.005">Bhagatwala</a>
+  </h1>
+  <p>
+  In his paper equation 7 is the following
+  </p>
+  <app-katex-renderer [latex]="'
+  \\dfrac{\\partial \\rho}{\\partial t} = - \\dfrac{\\partial \\rho u_i}{\\partial x_i} + \\dot{m}
+  '"></app-katex-renderer>
+  <br><br>
+  <app-katex-renderer [latex]="'
+  \\dfrac{\\partial \\rho u_i}{\\partial t}  = - \\dfrac{\\partial \\rho u_i u_j}{\\partial x_i} 
+  - \\dfrac{\\partial P}{\\partial x_i} + \\dfrac{\\partial \\tau_{ij}}{\\partial x_i} + \\dot{m}u_i
+  '"></app-katex-renderer>
+  <br><br>
+  <app-katex-renderer [latex]="'
+  \\dfrac{\\partial \\rho e_t}{\\partial t}  = - \\dfrac{\\partial \\rho e_t u_j}{\\partial x_i} 
+  - \\dfrac{\\partial P u_j}{\\partial x_j} + \\dfrac{\\partial \\tau_{ij}u_i}{\\partial x_j} 
+  - \\dfrac{\\partial q_j}{\\partial x_j} + \\dot{m}e_t
+  '"></app-katex-renderer>
+  <br><br>
+  <app-katex-renderer [latex]="'
+  \\dfrac{\\partial \\rho Y_k}{\\partial t}  = - \\dfrac{\\partial \\rho Y_k u_j}{\\partial x_i} 
+  - \\dfrac{\\partial J_{k,j}}{\\partial x_j} + \\omega_k + \\dot{m}Y_k
+  '"></app-katex-renderer>
+  <p>
+  and equation 8 is the following
+  </p>
+  <app-katex-renderer [latex]="'
+  P(\\mathbf{x}, t) = P_t(t) + p(\\mathbf{x}, t) = \\rho \\mathrm{R} t 
+  '"></app-katex-renderer>
+  <p>According to Bhagatwala 2015, upon differentiating equation 8 and using equation 7, the rate of change of pressure is determied to be</p>
+  <app-katex-renderer [latex]="'
+  \\dfrac{\\partial P}{\\partial t} = (\\gamma - 1) \\bigg(
+  \\dfrac{\\partial \\rho e_t}{\\partial t} - 
+  u_i\\dfrac{\\partial \\rho u_i}{\\partial t} +
+  \\dfrac{u_i^2}{2}\\dfrac{\\partial \\rho}{\\partial t} -
+  \\sum_{k} h_k \\dfrac{\\partial \\rho Y_k}{\\partial t}
+  \\bigg) 
+  + \\gamma \\mathrm{R_u} T \\sum_{k} \\dfrac{1}{W_k} \\dfrac{\\partial \\rho Y_k}{\\partial t}
+  '"></app-katex-renderer>
+  <p>which is equation 9 in his paper. In this section I will derive the equation 9 from equation 7 and equaiton 8.</p>
+</div>
