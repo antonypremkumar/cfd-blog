@@ -18,6 +18,30 @@
   '"></app-katex-renderer>
 </div>
 <div class="welcome-container">
+<h1>Chemical Kinetics</h1>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="chemical-kinetics.jpg" class="img-fluid" alt="Image">
+    </div>
+    <div class="col-md-6">
+      <p>
+        The rate of a chemical reaction increases with the increase of temperature.
+        This is described by the Arrhenius eqaution.
+        <br>
+        <app-katex-renderer [latex]="'
+        k = \\mathrm{A} e^{-\\mathrm{E_a/R}T}
+        '"></app-katex-renderer>
+        <br>
+        In the above equation, A is the Arrhenius factor or the frequency factor or the pre-exponential factor.
+        It is specific to a given reation. R is the gas constant and Ea is the activation energy measured in joules/mol.
+        The fraction Ea/RT denotes the fraction of molecules which have the energy greater than the activation energy, the energy required to make a activated complex.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="welcome-container">
   <h1>Derivations 
     <a href="https://doi.org/10.1016/j.combustflame.2015.06.005">Bhagatwala</a>
   </h1>
